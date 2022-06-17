@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(185, 241, 245);
+}
+
+h1 {
+    font-size: 70px;
+}
+
+button {
+    background-color: #f0f0f0;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+}
+
+input[type='text'] {
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+  
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+:checked + label {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+  }
